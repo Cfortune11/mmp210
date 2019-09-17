@@ -1,3 +1,5 @@
+
+
 function setup() {
 	createCanvas(640, 360);
 }
@@ -9,15 +11,17 @@ function draw() {
   noStroke();
   circle(300, 200,400,300); // face
 
-  fill("black");
-  rect(150, 100, 50,100);
-  triangle(400, 100,450, 150, 500, 100);
+  fill("black"); //eyes
+  ellipse(150, 150, 50, 100);
+	ellipse(250, 150, 40, 80);
 
-line(200, 300, 400, 350);
+fill("red");
+	ellipse(150, 150, 40, 40);
+	ellipse(250, 150, 30, 30);
 
+	stroke("black");
+	line(150, 250, 250, 280);
 
-fill("black")
 
 }
-
 
