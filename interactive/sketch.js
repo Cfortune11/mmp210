@@ -1,36 +1,45 @@
-
-var x = 300;
-var y = 200;
-var faceSize = 500;
-
+// self portrait
 function setup() {
-    createCanvas(600, 400);
+    createCanvas(400, 400);
 }
 
 function draw() {
-    background(100, 0, 255);
+    background(220);
+    rectMode(CENTER);
     
-    fill("black");
+    var x = width/2;
+    var y = height/2;
+    var mouthSize = 200; // size
+    var o = 50; // offset
+    var s = map(mouseX, 0, width, 5, 200); // move mouth with mouse x
+    s = max(0, s); // prevents negative value
     noStroke();
-    circle(x, y, faceSize, faceSize/2); // face
-    
+    fill("black");
+    ellipse(x, y, s); // face
+
+    fill("red");
+    ellipse(x - o, y, 25); // right eye
+    ellipse(x + o, y, 25); // left eye
+
+    fill('yellow');
     stroke("red");
-    noFill();
-    strokeWeight(5);
-    fill(250, 100, 100, 100);
+    strokeWeight(4);
+
    
-    triangle(x - 150, y - 100, faceSize/10, faceSize/5); // left eye
-    triangle(
-        x + 100, y - 100, 
-        x + 150, y - 50, 
-        x + 200, y - 100
-    ); // right eye
-    
-    strokeWeight(10);
-    stroke("blue");
-    line(
-        x - 100, y + 100, 
-        x + 100, y + 150
-    ); // mouth
+    rect(x, y + o, mouthSize, mouthSize/2, 10); // mouth 
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
 
