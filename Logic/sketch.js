@@ -3,7 +3,7 @@ meme version 1
  10.3.2019
  */
 function setup () {
-    createCanvas(640, 500);
+    createCanvas(640, 400);
 }
 
 var img;
