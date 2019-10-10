@@ -2,22 +2,28 @@
 meme version 1
  10.3.2019
  */
-function draw () {
-    createCanvas(640, 360);
+function setup () {
+    createCanvas(640, 430);
+}
+
+var img;
+
+function preload(){
+    img = loadImage("Qui-Gon-Jinn.jpg")
 }
 
 
+
 function draw(){
-    background("blue");
-    fill('black')
-    
-    textSize(100);
-    text("MMP 210",100, 100);
-    
-    textSize(100);
-    fill ("purple");
-    stroke('pink');
+    image(img, 0, 0);
+    textAlign(LEFT);
+    textSize(20);
+    fill('white');
+    textStyle(NORMAL);
+    stroke('black');
     strokeWeight(10);
-     
-    text("hello world", 100,200);
+    textFont("Grenze");
+    text("When your best friend steals the last Pizza", 10, 100);
+    
+    
 }
