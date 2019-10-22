@@ -31,12 +31,13 @@ function draw() {
     strokeWeight(10);
     textFont("Grenze");
     stroke("black");
-     text("When your dad gets your report card",x, y);
+     text("When your dad gets your report card",x, 300);
     fill("black");
     x +=speed;
     if (x > width) {
         x=100;
-    y   if (mouseIsPressed && mouseX < 320) {
+    }
+    if (mouseIsPressed && mouseX < 320) {
         fill("white");
         text("Wasup Pop", 111, 50);
     } else if (mouseIsPressed && mouseX < 690) {
