@@ -9,4 +9,4 @@ int sensorValue = analogRead (A0);
   Serial.println(sensorValue);
   delay(10);  
 }
-}
+
