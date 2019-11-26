@@ -22,7 +22,7 @@ var prevBtnH = 50;
 var cat;
 
 function preload() {
-    cat = loadImage("cat.jpg");
+    Galaxy = loadImage("Galaxy.jpg");
 }
 
 function setup() {
