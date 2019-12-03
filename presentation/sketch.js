@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-    background(51);
+    background(#0000FF);
  
     if (slideNumber == 0) {
         // content for slide number 0
@@ -40,15 +40,15 @@ function draw() {
         text("Final Project Pitch", width/2, height/2);
         
         textSize(30);
-        text("by Owen", width/2, height/2 + 50);
+        text("by Corey Fortune", width/2, height/2 + 50);
         
     } else if (slideNumber == 1) {
         // content for slide number 1
         
         fill(255);
-        textSize(50);
+        textSize(30);
         textAlign(CENTER, CENTER);
-        text("FSR", width/2, 200);
+        text("For my Project will be using", width/2, 100);
         
         ellipse(200, 400, 100);
         rect(200, 375, 200, 50);
@@ -61,7 +61,7 @@ function draw() {
     } else if (slideNumber == 2) {
         
         // theme
-        image(cat, 0, 0, width, height);
+        image(Galaxy, 0, 0, width, height);
         text("Theme", width/2, height/2);
     }
     
