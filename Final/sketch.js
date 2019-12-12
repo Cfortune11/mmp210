@@ -6,7 +6,7 @@ var serial; // variable to hold an instance of the serialport library
 var portName = "COM12"; // fill in your serial port name here
 var locH; // location of the circle
 var locV; // location of the circle
-var circleColor = 225; // color of the circle
+var circleColor = 290; // color of the circle
 
 function setup() {
     createCanvas(640, 480); // make canvas
@@ -21,6 +21,7 @@ function setup() {
 }
 
 function draw() {
+    noStroke();
     var r= 100
     var g= locH
     var b= locV  // console.log(locH, locV);
